@@ -734,10 +734,6 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.kinal{
-  background-image: url(https://static.wixstatic.com/media/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg/v1/fill/w_1861,h_513,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg);
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
