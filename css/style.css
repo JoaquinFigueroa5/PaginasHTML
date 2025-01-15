@@ -38,6 +38,10 @@ body {
   padding: 75px 0;
 }
 
+.layout_padding1 {
+  padding: 75px 0;
+}
+
 .layout_padding2 {
   padding: 45px 0;
 }
@@ -62,7 +66,21 @@ body {
   position: relative;
 }
 
+.custom_heading1 {
+  position: relative;
+}
+
 .custom_heading::before {
+  position: absolute;
+  content: "";
+  left: -45px;
+  width: 37px;
+  height: 32px;
+  background-image: url(../images/herbal.png);
+  background-size: cover;
+}
+
+.custom_heading1::before {
   position: absolute;
   content: "";
   left: -45px;
@@ -236,12 +254,31 @@ a:focus {
   margin-top: 0;
 }
 
+.about_section1 .about_container1 {
+  margin-top: 0;
+}
+
 .about_section .about_container {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding: 75px 45px;
-  background-image: url(../images/KendrickLamar.png);
+  background-image: url(../images/VaporWave.jpg);
+  background-size: auto 100%;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -150px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.21);
+}
+
+.about_section1 .about_container1 {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px 45px;
+  background-image: url(../images/yopo.jpeg);
   background-size: auto 100%;
   background-color: #fff;
   background-position: center;
@@ -260,7 +297,20 @@ a:focus {
           justify-content: space-between;
 }
 
+.about_section1 .about_container1 .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about_section .about_container .container > div {
+  width: 46%;
+}
+
+.about_section1 .about_container1 .container1 > div {
   width: 46%;
 }
 
@@ -268,13 +318,28 @@ a:focus {
   display: inline-block;
   padding: 14px 35px;
   background-color: transparent;
-  border: 1.5px solid #00ff00;
-  color: #00ff00;
-  color: #3cff3c;
+  border: 1.5px solid #5A609F;
+  color: #5A609F;
+  color: #5A609F;
+  margin-top: 75%;
+}
+
+.about_section1 .detail1 a {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: transparent;
+  border: 1.5px solid #5A609F;
+  color: #5A609F;
+  color: #5A609F;
   margin-top: 75%;
 }
 
 .about_section .detail a:hover {
+  background-color: #5A609F;
+  color: #ffffff;
+}
+
+.about_section1 .detail1 a:hover {
   background-color: #00ff00;
   color: #ffffff;
 }
@@ -292,7 +357,28 @@ a:focus {
           justify-content: flex-end;
 }
 
+.about_section1 .detail1-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .product_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +585,7 @@ a:focus {
 }
 
 .info_section {
-  background-image: url(../images/info-bg.jpg);
+  background-image: url(../images/AYJ3.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }

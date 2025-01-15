@@ -21,7 +21,15 @@
         flex-direction: column;
     }
 
+    .about_section1 .about_container1 .container1 {
+        flex-direction: column;
+    }
+
     .about_section .about_container {
+        width: 90%;
+    }
+
+    .about_section1 .about_container1 {
         width: 90%;
     }
 
@@ -29,11 +37,26 @@
         width: 95%;
     }
 
+    .about_section1 .about_container1 .container1>div {
+        width: 95%;
+    }
+
     .about_section .detail a {
         margin: 25px auto 35px auto;
     }
 
+    .about_section1 .detail1 a {
+        margin: 25px auto 35px auto;
+    }
+
     .about_section .detail a {
+
+        background-color: #00ff00;
+        color: #ffffff;
+
+    }
+
+    .about_section1 .detail1 a {
 
         background-color: #00ff00;
         color: #ffffff;
