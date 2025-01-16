@@ -746,3 +746,118 @@ a:focus {
 .fadeIn{
   animation: fadeIn 1s ease-out;
 }
+
+@keyframes fadeOn {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.fadeOnRight{
+  transform: translateY(-50px);
+  animation: fadeOn 1.5s ease-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tipo1{
+  width: 55%;
+}
+
+.kinal {
+  height: 100vh;
+  background-image: url(https://static.wixstatic.com/media/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg/v1/fill/w_1861,h_513,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.kinal {
+  height: auto;
+}
+
+.kinal {
+  height: auto;
+  width: auto;
+
+}
+
+.tipo2{
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-top: -30%;
+  
+}
+
+.infoGen{
+  background-color: #ECEBEB;
+}
+
+@keyframes fadeOnLeft {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.fadeOnLeft{
+  transform: translateY(50px);
+  animation: fadeOn 2s ease-out forwards;
+}
+
+.tipo3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.tipo3 .box{
+  flex: 1;
+  order: 2;
+}
+
+.fadeOnTop {
+  overflow: hidden;
+}
+
+.card {
+  animation: slideDown 2s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.tipo4{
+  flex: 1;
+  order: 1;
+}
+

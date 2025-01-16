@@ -36,3 +36,17 @@ document.addEventListener('click', (e) => {
     overlay.style.display = 'none';
   }
 });
+
+// Seleccionar todas las cajas ocultas
+const hiddenElements = document.querySelectorAll('.hidden');
+// Crear el observador
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // Agregar clase visible
+      observer.unobserve(entry.target); // Dejar de observar para mejorar el rendimiento
+    }
+  });
+});
+// Observar cada elemento oculto
+hiddenElements.forEach(el => observer.observe(el));
