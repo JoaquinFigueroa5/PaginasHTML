@@ -37,16 +37,54 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Seleccionar todas las cajas ocultas
 const hiddenElements = document.querySelectorAll('.hidden');
-// Crear el observador
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible'); // Agregar clase visible
-      observer.unobserve(entry.target); // Dejar de observar para mejorar el rendimiento
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
 });
-// Observar cada elemento oculto
 hiddenElements.forEach(el => observer.observe(el));
+
+
+
+const startCounters = () => {
+  const counters = document.querySelectorAll('.contador');
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let currentValue = 0;
+    const increment = Math.ceil(target / 100);
+    const updateCounter = () => {
+      if (currentValue < target) {
+        currentValue += increment;
+        counter.textContent = currentValue > target ? target : currentValue;
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.textContent = target;
+      }
+    };
+    updateCounter();
+  });
+};
+document.addEventListener('DOMContentLoaded', startCounters);
+
+const observerOptions = {
+  threshold: 0.25,
+};
+
+const observerCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const counters = entry.target.querySelectorAll('.contador');
+      counters.forEach((counter) => startCounters(counter));
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const observer2 = new IntersectionObserver(observerCallback, observerOptions);
+
+const section = document.querySelector('.sectionCounters');
+observer2.observe(section);

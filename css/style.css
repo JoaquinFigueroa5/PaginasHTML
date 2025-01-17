@@ -861,3 +861,15 @@ a:focus {
   order: 1;
 }
 
+.tipo4{
+  margin-right: -50px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: -5%;
+  margin-top: -5%;
+}
+
+.theLast{
+  background-color: #16233F;
+}
+
