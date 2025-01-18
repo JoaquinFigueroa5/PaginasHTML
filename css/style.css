@@ -873,3 +873,24 @@ a:focus {
   background-color: #16233F;
 }
 
+.theLast2{
+  text-align: start;
+  padding-top: 5%;
+  padding-left: 30%;
+}
+
+.theLastGen{
+  justify-content: center;
+  align-items: center;
+}
+
+.admisiones{
+  text-align: left;
+}
+
+.contact{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
