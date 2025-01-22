@@ -88,3 +88,12 @@ const observer2 = new IntersectionObserver(observerCallback, observerOptions);
 
 const section = document.querySelector('.sectionCounters');
 observer2.observe(section);
+
+
+function showAlert(alertId){
+  document.getElementById(alertId).style.display = "flex";
+}
+
+function closeAlert(alertId){
+  document.getElementById(alertId).style.display = "none";
+}
